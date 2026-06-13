@@ -12,7 +12,7 @@ review queue.
 3. Paste this URL and click **Connect New Repository**:
 
    ```
-   https://libredb.github.io/caprover-one-click-apps
+   https://libredb.org/caprover-one-click-apps
    ```
 
 4. Search for **LibreDB Studio** and install.

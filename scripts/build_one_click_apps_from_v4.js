@@ -180,9 +180,9 @@ function buildDist() {
             fs.outputJsonSync(path.join(pathOfDistV4, 'list'), v3List);
         })
         .then(function () {
-            // CNAME is optional: only published when a custom domain is configured.
-            // LibreDB serves this repo from the default GitHub Pages project URL
-            // (https://libredb.github.io/caprover-one-click-apps), so there is no CNAME.
+            // CNAME is optional: only published when this repo itself owns a custom
+            // domain. LibreDB serves it from the org GitHub Pages domain
+            // (https://libredb.org/caprover-one-click-apps), so there is no CNAME here.
             const cnamePath = path.join(pathOfPublic, 'CNAME');
             if (fs.existsSync(cnamePath)) {
                 return fs.copySync(cnamePath, path.join(pathOfDist, 'CNAME'));
