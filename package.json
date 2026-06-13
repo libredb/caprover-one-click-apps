@@ -1,0 +1,21 @@
+{
+  "name": "libredb-caprover-one-click-apps",
+  "version": "1.0.0",
+  "description": "LibreDB's CapRover One Click App repository",
+  "scripts": {
+    "formatter": "prettier --check \"./public/**/*.(json|yml)\"",
+    "formatter-write": "prettier --write \"./public/**/*.(json|yml)\"",
+    "build": "rm -rf ./dist/ && mkdir -p dist && node ./scripts/build_one_click_apps_from_v4.js",
+    "validate_apps": "node ./scripts/validate_apps.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/libredb/caprover-one-click-apps.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^9.0.1",
+    "prettier": "^2.0.5",
+    "yaml": "^1.10.0"
+  }
+}
